@@ -31,6 +31,8 @@ function addTodo() {
 
   if (todoText !== '') {
     todos.push(todoText);
+    let fart = new Audio("https://upload.wikimedia.org/wikipedia/commons/c/cf/Fart.ogg");
+    fart.play();
     renderTodos();
     todoInput.value = '';
   }
