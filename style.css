@@ -2,6 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
+  
 }
 
 h1 {
@@ -9,7 +10,8 @@ h1 {
 }
 
 form {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
+  align-items: center;
 }
 
 input[type="text"] {
@@ -17,17 +19,27 @@ input[type="text"] {
   width: 250px;
 }
 
+/* ul[id="todo-list"]{
+  padding: 8px;
+  align-items: right;
+
+} */
+
 button {
   padding: 8px 12px;
+  margin-right: 10px;
 }
 
-ul {
+ ul {
   list-style-type: none;
   padding: 0;
-}
+} 
 
 li {
-  margin-bottom: 10px;
+  margin-bottom: 25px;
+  /* margin-right: 100px; */
+  align-items: right;
+
 }
 
 .completed {
