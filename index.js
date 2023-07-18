@@ -39,6 +39,8 @@ function addTodo() {
 // Function to remove a to-do
 function removeTodo(index) {
   todos.splice(index, 1);
+  let fart = new Audio("https://upload.wikimedia.org/wikipedia/commons/c/cf/Fart.ogg");
+    fart.play();
   renderTodos();
 }
 
