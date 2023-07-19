@@ -23,6 +23,23 @@ function renderTodos() {
 
     todoList.appendChild(todoItem);
   });
+
+  window.localStorage.setItem('todos', JSON.stringify(todos));
+
+  if (todos.length > 0) {
+
+    const clearButton = document.createElement('button');
+    clearButton.innerText = 'Clear';
+    clearButton.addEventListener('click', () => clearTodos());
+
+    todoList.appendChild(clearButton);
+  }
+}
+
+// Function to clear the to-do list
+function clearTodos() {
+  todos = [];
+  renderTodos();
 }
 
 // Function to add a new to-do
@@ -46,6 +63,13 @@ function removeTodo(index) {
   renderTodos();
 }
 
+// Event listener for clearing the to-do list
+todoList.addEventListener('click', (e) => {
+  if (e.target.tagName === 'BUTTON') {
+    clearTodos();
+  }
+});
+
 // Event listener for submitting the form
 todoForm.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -54,3 +78,5 @@ todoForm.addEventListener('submit', (e) => {
 
 // Initial rendering of the to-do list
 renderTodos();
+
+

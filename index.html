@@ -6,16 +6,27 @@
 </head>
 <body>
   <h1>Group Six Just For Kicks To-Do List</h1>
-
+  <h2>What do you want to do today?</h2>
+  <p id="todo-error" class="error"></p>
+  <p id="todo-success" class="success"></p>
   <form id="todo-form">
     <input type="text" id="todo-input" placeholder="Enter a task">
     <button type="submit">Add</button>
+    <div id="todo-form-error" class="error"></div>
+    <div id="todo-form-success" class="success"></div>
   </form>
 
   <ul id="todo-list"></ul>
 
   <script src="index.js"></script>
-</body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/en-gb.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/en-ca.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/en-au.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/en-ie.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/en-nz.js"></script>
+  </body>
 </html>
-
-
+```
