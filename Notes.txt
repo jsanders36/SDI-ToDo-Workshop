@@ -1,0 +1,11 @@
+Title at top
+  text box for to-do's : Button next to text box to add more to-do'scale 
+  Output list of to-do's to fiil the rest of Page : button to delete completed tasks
+
+*Styling needs to be unique
+
+  
+Extra's if time allows
+archive of deleted tasks
+Add instructions to README file
+  
